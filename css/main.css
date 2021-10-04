@@ -1,0 +1,267 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+   padding: 2rem;
+  background-image: linear-gradient(to left bottom, #0000,#5762d9,#00064b);
+     background-repeat: no-repeat;
+     background-color: #FFF;
+}
+
+@media screen and (min-width: 40em){
+  body{
+     height: 100vh;
+  }
+}
+
+
+
+@media screen and (min-width: 40em){
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 1.5rem;
+  }
+}
+
+section{
+  background-color: #5762D5;
+  text-align: center;
+  border-radius: 25px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+@media screen and (min-width: 40em){
+  section {
+    margin-bottom: 0;
+
+  }
+}
+
+h1{
+font-family: 'Rajdhani', sans-serif;
+  color:#E5E9EC;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2{
+ font-family: 'Rajdhani', sans-serif;
+  color:#E5E9EC;
+  text-transform: uppercase;
+}
+
+p{
+ color:#E5E9EC;
+ font-family: 'Open Sans', sans-serif; 
+
+}
+
+ul{
+  color:#E5E9EC;
+  font-family: 'Open Sans', sans-serif; 
+}
+
+.profile{
+  /*position on main grid */
+grid-column:1;
+grid-row: 1/span 2;
+ /* nested grid */
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(4,auto);
+}
+
+.profile h1{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.profilepic {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.profilepic img{
+  width: 175px;
+  height: auto;
+}
+
+.links{
+grid-column:1;
+grid-row: 3;
+}
+
+
+
+.links .icon{
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  text-align: left;
+  align-items: center;
+  grid-gap: 1rem;
+  color: #FFF;
+  font-size: 20px;
+}
+
+.links p{
+  font-size: 20px;
+}
+
+
+
+.friends{
+  grid-column:1;
+  grid-row: 4;
+}
+
+.friends img{
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  text-align: left;
+  align-items: center;
+  grid-gap: 1rem;
+}
+
+.friends ul{
+  list-style: none;
+  text-align: left;
+  align-items: center;
+  font-size: 17px;
+  background-color: #6D77D8;
+  padding: 1.5rem;
+  border-radius: 25px;
+
+}
+
+.friends img{
+width: 50px;
+height: auto;
+}
+
+.friends li{
+  display: grid;
+  grid-template-columns: 5.5rem auto;
+  padding: .5rem;
+  grid-gap: .5rem;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.friends h1{
+  text-align: center;
+}
+
+.acivity{
+
+}
+
+
+.activity{
+ grid-column:2;
+}
+
+.activity i{
+color: #FFF;
+font-size: 20px;  
+}
+
+
+.activity h1{
+  padding-bottom: 3rem;
+}
+
+label {
+padding-right: 10px;
+font-size: 1rem;
+}
+
+.weight{
+  grid-column:3;
+  grid-row:1;
+}
+.weight img{
+width: 320px;
+height: auto;
+}
+
+.weight .icon{
+ color: #FFF;
+font-size: 20px; 
+}
+
+.steps{
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.wod{
+ grid-column: 3/span 2;
+  grid-row: 2;
+}
+
+.weeklytotal{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.activity img{
+  width: 250px;
+  height: auto;
+  margin-top: -5rem;
+}
+
+.workouts img{
+  padding-top: 4rem;
+}
+
+.graph1 img{
+  width: 160px;
+  height: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+
+}
+
+.wod img{
+width: 100%;
+height: auto;
+padding-top: 1rem;
+}
+
+@media screen and (min-width: 40em){
+  .wod img{
+     width: 70%;
+  }
+}
+
+
+h2{
+font-family: 'Rajdhani', sans-serif;
+}
+
+.steps img{
+  width: 150px;
+  height: auto;
+  grid-column: 2;
+  grid-row: 1;
+  padding-top: .5rem;
+}
+
+.steps .icon{
+color: #FFF;
+font-size: 30px;
+padding-top: 1rem;
+
+}
+
+.weeklytotal li{
+  font-size: 12px;
+  text-align: left;
+}
